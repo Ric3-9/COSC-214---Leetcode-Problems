@@ -21,9 +21,13 @@ public class RomanConvert {
 
                 integerVal -= currentVal; // Subtract if smaller than the next symbol
 
-            } else { integerVal += currentVal; // Otherwise, add it to the total
-        }
+            } else integerVal += currentVal; // Otherwise, add it to the total
         
-        return total;
+            return total;
+        }
+    }
+    public static void main(String[] args) {
+        String roman = "MCMXCIV";
+        System.out.println("Roman " + roman + " to Integer: " + romanToInt(roman));
     }
 }
