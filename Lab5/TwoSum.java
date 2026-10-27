@@ -16,4 +16,9 @@ public class TwoSum {
         // if no solution is found returns an empty array
         return new int[]{};
     }
+    public static void main(String[] args) {
+        int[] nums = {2, 7, 11, 15};
+        int target = 9;
+        System.out.println("Two Sum Results: " + Arrays.toString(twoSum(nums, target)));
+    }
 }
